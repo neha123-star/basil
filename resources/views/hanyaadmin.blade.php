@@ -57,8 +57,8 @@
                                    <i class="fa fa-user"></i>   {{ Auth::user()->name }}   <span class="caret"></span>
                                 </a>
                                 </li>
-                                 <li class="nav-link" >
-                              <a  href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                 <li class="nav-item" >
+                              <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                         <label class="text-danger">{{ __('Keluar') }}</label>
                                     </a>
                             </li>
@@ -86,20 +86,24 @@
               <h3>Untuk Mengedit Produk KliK tombol dibawah</h3>
             </div>
           </div>
-          <div class="col">
-            <div class="text-center ">
-              <h2><a href="/tampil/lihatoff" class="btn btn-primary">Microsoft Office</a></h2>
+
+            <div class="col-md-4">
+              <div class="text-center ">
+                <img src="{{url('assets/images/a.png')}}" class="rounded mx-auto d-block" alt="..." style="width: 200px; height: 200px">
+                <h2><a href="/tampil/lihatoff" class="btn btn-primary  btn-block">Microsoft Office</a></h2>
+              </div>
             </div>
-          </div>
-          <div class="col">
-          	<div class="text-center">
-          	<h2><a href="/tampil/lihatpg" class="btn btn-primary">Programming</a></h2></div>
-          </div>
-          <div class="col">
-          	<div class="text-center">
-          	<h2><a href="/tampil/lihatds" class="btn btn-primary">Desain</a></h2></div>
-          </div>
-        </div>
+            <div class="col-md-4">
+              <div class="text-center">
+                <img src="{{url('assets/images/b.png')}}" class="rounded mx-auto d-block" alt="..." style="width: 200px; height: 200px">
+              <h2><a href="/tampil/lihatpg" class="btn btn-primary  btn-block">Programming</a></h2></div>
+            </div>
+            <div class="col-md-4">
+              <div class="text-center">
+                <img src="{{url('assets/images/c.jpg')}}" class="rounded mx-auto d-block" alt="..." style="width: 200px; height: 200px">
+              <h2><a href="/tampil/lihatds" class="btn btn-primary btn-block">Desain</a></h2></div>
+            </div>
+          </div>  
       </div>
     </section>
 
