@@ -57,8 +57,8 @@
                                    <i class="fa fa-user"></i>   {{ Auth::user()->name }}   <span class="caret"></span>
                                 </a>
                                 </li>
-                                 <li class="nav-link">
-                              <a class="nav-link text-danger" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                 <li class="nav-item">
+                              <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                         <label class="text-danger">{{ __('Keluar') }}</label>
                                     </a>
                             </li>
